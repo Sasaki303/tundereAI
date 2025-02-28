@@ -8,7 +8,7 @@ reference
  - https://note.com/yasu_shiina/n/n93cbda042062?utm_source=chatgpt.com
  - https://qiita.com/dekadanna/items/e625ecdf20824dcc2dcd
  - https://zenn.dev/koichiro_mori/scraps/804db9be602308
-
+ - https://github.com/firstpersoncode/local-rag?ref=hackernoon.com
 ```
 ollama run tundere-ai
 ```
