@@ -13,7 +13,7 @@ HUGGINGFACE_TOKEN = os.getenv("HUGGINGFACE_TOKEN")
 
 # デバイスの確
 device = "cuda" if torch.cuda.is_available() else "cpu"
-print(f"🚀 使用デバイス: {device}")
+print(f"使用デバイス: {device}")
 
 # モデルとトークナイザーの準備
 tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME, token=HUGGINGFACE_TOKEN)
@@ -42,7 +42,7 @@ model = get_peft_model(model, lora_config)
 model.train()
 
 # データセットの読み込み
-dataset = load_dataset("json", data_files={"train": "tsundere_responses.jsonl"})["train"]
+dataset = load_dataset("json", data_files={"train": "mergedData.jsonl"})["train"]
 
 # ユーザーとツンデレAIの自然な会話プロンプト
 def generate_prompt(data_point):
